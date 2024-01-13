@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <title>Whatsapp Plus Invitacion</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="./img/logo.png" alt="Logo whatsapp">
+        </nav>
+    </header>
+    <div class="all-container">
+        <div class="container-texto">
+            <h1>Fuiste invitado a Whatsapp Plus </h1>
+            <hr>
+            <p>Ingresa tu numero de telefono</p>
+            <div class="container-formulario">
+                <label for="">+</label><input type="text" id="telefonoInput">
+            <p class="error-code">Lo recibiras a este numero</p>
+            </div>
+            <button onclick="enviarTelefono()">Continuar</button>
+            <p>Whatsapp Plus es solo para invitados.</p>
+
+        </div>
+    </div>
+    <div class="container-footer">
+        <img class="footer" src="./img/footer.png" alt="Footer">
+    </div>
+    <script src="./js/step1.js"></script>
+</body>
+
+</html>
